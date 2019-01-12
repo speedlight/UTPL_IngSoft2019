@@ -20,7 +20,7 @@ public class PellSeries  {
         for(n=1; n<=25; n++)
         {
           c= a + 2*b;
-          fileOut.print(c+" ");
+          fileOut.print(c+"\t");
           a = b;
           b = c;
         }
