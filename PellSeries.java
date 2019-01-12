@@ -1,5 +1,4 @@
-//Basic function to print some numbers
-//in a Pell serie.
+// Basic function to print some numbers in a Pell serie.
 // author: Carlos Egüez
 // 2019
 
@@ -13,11 +12,14 @@ public class PellSeries  {
     {
         PrintStream originalOut = System.out;
         PrintStream fileOut = new PrintStream("./PellSerie_output.txt"); 
+
         System.setOut(fileOut);
         
-        int n,a=1,b=0,c;
+        int cantidad=30;
+
+        int a=1,b=0,c;
         fileOut.print("Primeros 25 numeros de la serie: ");
-        for(n=1; n<=25; n++)
+        for(n=1; cantidad; n++)
         {
           c= a + 2*b;
           fileOut.print(c+"\t");
