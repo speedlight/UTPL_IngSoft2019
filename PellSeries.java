@@ -15,11 +15,11 @@ public class PellSeries  {
 
         System.setOut(fileOut);
         
-        int cantidad=30;
+        int cantidad=200;
 
-        int a=1,b=0,c;
-        fileOut.print("Primeros 25 numeros de la serie: ");
-        for(n=1; cantidad; n++)
+        int n,a=1,b=0,c;
+        fileOut.print("Primeros " + cantidad + " números de la serie: ");
+        for(n=1; n<=cantidad; n++)
         {
           c= a + 2*b;
           fileOut.print(c+"\t");
